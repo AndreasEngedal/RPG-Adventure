@@ -1,0 +1,15 @@
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\RPG Adventure\bin\Debug\RPG Adventure.exe.config
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\bin\Debug\RPG Adventure.exe.config
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\bin\Debug\RPG Adventure.exe
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\bin\Debug\RPG Adventure.pdb
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\RPG Adventure.csprojResolveAssemblyReference.cache
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\View\MainWindow.g.cs
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\App.g.cs
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\RPG Adventure_MarkupCompile.cache
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\RPG Adventure_MarkupCompile.lref
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\View\MainWindow.baml
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\RPG Adventure.g.resources
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\RPG_Adventure.Properties.Resources.resources
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\RPG Adventure.csproj.GenerateResource.Cache
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\RPG Adventure.exe
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\RPG Adventure.pdb
