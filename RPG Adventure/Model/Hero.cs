@@ -8,5 +8,6 @@ namespace RPG_Adventure
 {
     class Hero
     {
+        public string Name { get; set; }
     }
 }

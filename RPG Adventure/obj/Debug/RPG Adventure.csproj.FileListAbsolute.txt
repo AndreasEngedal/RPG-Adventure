@@ -13,3 +13,6 @@ C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Advent
 C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\RPG Adventure.csproj.GenerateResource.Cache
 C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\RPG Adventure.exe
 C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\RPG Adventure.pdb
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\bin\Debug\MainDatabase.mdf
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\bin\Debug\MainDatabase_log.ldf
+C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\obj\Debug\RPG Adventure_Content.g.cs
