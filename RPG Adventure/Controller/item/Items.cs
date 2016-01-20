@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RPG_Adventure.Controller.item
+{
+    class Items
+    {
+        public static Item rubberChicken = new ItemWeapon("Rubber Chicken", 1, 10);
+    }
+}
