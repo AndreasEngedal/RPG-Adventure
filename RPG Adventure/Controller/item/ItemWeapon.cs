@@ -10,9 +10,14 @@ namespace RPG_Adventure.Controller.item
     {
         public int Damage { get; set; }
 
-        public ItemWeapon(string name, int value, int damage) : base(name, value)
+        public ItemWeapon(string name, string description, int value, int damage) : base(name, description, value)
         {
             Damage = damage;
+        }
+
+        public int getDamage()
+        {
+            return rand.Next(Damage);
         }
     }
 }
