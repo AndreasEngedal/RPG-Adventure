@@ -78,6 +78,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controller\DataController.cs" />
     <Compile Include="Model\Hero.cs" />
     <Compile Include="Model\Data.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
@@ -112,9 +113,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="MainDatabase.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

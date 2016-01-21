@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RPG_Adventure"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="350" Width="350" ResizeMode="NoResize" ShowInTaskbar="False">
+    <Window.Background>
+        <RadialGradientBrush>
+            <GradientStop Color="#FF3F4C3A" Offset="1"/>
+            <GradientStop Color="White"/>
+        </RadialGradientBrush>
+    </Window.Background>
+    <Grid Margin="20,20,20,20">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="36,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="txtBoxName" HorizontalAlignment="Left" Margin="200,51,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top"/>
+        <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="36,156,0,0" VerticalAlignment="Top" Width="120" Click="btnCreate_Click"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="36,180,0,0" VerticalAlignment="Top" Width="120" Click="btnDelete_Click"/>
+        <Button x:Name="btnFirst" Content="First" HorizontalAlignment="Left" Margin="36,204,0,0" VerticalAlignment="Top" Width="120" Click="btnFirst_Click" />
+        <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="36,228,0,0" VerticalAlignment="Top" Width="120" Click="btnNext_Click"/>
+        <Button x:Name="btnPrevious" Content="Previous" HorizontalAlignment="Left" Margin="36,252,0,0" VerticalAlignment="Top" Width="120" Click="btnPrevious_Click"/>
     </Grid>
 </Window>
