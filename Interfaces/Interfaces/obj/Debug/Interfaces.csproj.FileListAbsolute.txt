@@ -1,6 +1,0 @@
-C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\Interfaces\Interfaces\bin\Debug\Interfaces.exe.config
-C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\Interfaces\Interfaces\bin\Debug\Interfaces.exe
-C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\Interfaces\Interfaces\bin\Debug\Interfaces.pdb
-C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\Interfaces\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
-C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\Interfaces\Interfaces\obj\Debug\Interfaces.exe
-C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\Interfaces\Interfaces\obj\Debug\Interfaces.pdb

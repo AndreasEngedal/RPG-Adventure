@@ -59,6 +59,7 @@ namespace RPG_Adventure
                 controller.heroes.Remove(controller.heroes[deletedHeroId]);
                 MessageBox.Show("Hero deleted!");
                 textBox.Text = String.Empty;
+                counter++;
             }
         }
         private int counter = 0;
