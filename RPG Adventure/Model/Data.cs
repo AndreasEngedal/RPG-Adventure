@@ -109,7 +109,7 @@ namespace RPG_Adventure
         {
             SqlConnection conn = new SqlConnection
                 (
-                @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Andreas\Documents\Visual Studio 2015\Projects\@RPG-Adventure\RPG Adventure\MainDatabase.mdf;Integrated Security=True"
+                @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=|DataDirectory|\MainDatabase.mdf; Integrated Security=True"
                 );
             return conn;
         }
