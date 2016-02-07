@@ -8,6 +8,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/bg.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/button-bg-hover.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/button-bg.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/name-label.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/stat-grid-bg-small.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/stat-grid-bg.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/stat-label-bg.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("maindatabase.mdf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("maindatabase_log.ldf")]
 

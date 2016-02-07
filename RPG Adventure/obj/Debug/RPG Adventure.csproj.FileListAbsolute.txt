@@ -33,3 +33,33 @@ C:\Users\Andreas Engedal\Documents\RPG-Adventure\RPG Adventure\obj\Debug\View\Ma
 C:\Users\Andreas Engedal\Documents\RPG-Adventure\RPG Adventure\obj\Debug\RPG Adventure.g.resources
 C:\Users\Andreas Engedal\Documents\RPG-Adventure\RPG Adventure\obj\Debug\RPG_Adventure.Properties.Resources.resources
 C:\Users\Andreas Engedal\Documents\RPG-Adventure\RPG Adventure\obj\Debug\RPG Adventure.csproj.GenerateResource.Cache
+E:\Dropbox\Spil\RPG\RPG Adventure\bin\Debug\RPG Adventure.exe.config
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\RPG Adventure.exe
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\RPG Adventure.pdb
+E:\Dropbox\Spil\RPG\RPG Adventure\bin\Debug\MainDatabase.mdf
+E:\Dropbox\Spil\RPG\RPG Adventure\bin\Debug\MainDatabase_log.ldf
+E:\Dropbox\Spil\RPG\RPG Adventure\bin\Debug\RPG Adventure.exe
+E:\Dropbox\Spil\RPG\RPG Adventure\bin\Debug\RPG Adventure.pdb
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\RPG Adventure.csprojResolveAssemblyReference.cache
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\App.g.cs
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\RPG Adventure_Content.g.cs
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\RPG Adventure_MarkupCompile.cache
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\RPG Adventure_MarkupCompile.lref
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\RPG Adventure.g.resources
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\RPG_Adventure.Properties.Resources.resources
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\RPG Adventure.csproj.GenerateResource.Cache
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\PageSwitcher.g.cs
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\View\Gameplay.g.cs
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\View\MainMenu.g.cs
+E:\Dropbox\Spil\RPG\RPG Adventure\bin\Debug\Engine.dll
+E:\Dropbox\Spil\RPG\RPG Adventure\bin\Debug\Engine.pdb
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\PageSwitcher.baml
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\View\Gameplay.baml
+E:\Dropbox\Spil\RPG\RPG Adventure\obj\Debug\View\MainMenu.baml
+E:\Dropbox\Spil\RPG\RPG Adventure\bin\Debug\Images\bg.jpg
+E:\Dropbox\Spil\RPG\RPG Adventure\bin\Debug\Images\button-bg-hover.png
+E:\Dropbox\Spil\RPG\RPG Adventure\bin\Debug\Images\button-bg.png
+E:\Dropbox\Spil\RPG\RPG Adventure\bin\Debug\Images\name-label.png
+E:\Dropbox\Spil\RPG\RPG Adventure\bin\Debug\Images\stat-grid-bg-small.jpg
+E:\Dropbox\Spil\RPG\RPG Adventure\bin\Debug\Images\stat-grid-bg.jpg
+E:\Dropbox\Spil\RPG\RPG Adventure\bin\Debug\Images\stat-label-bg.png
