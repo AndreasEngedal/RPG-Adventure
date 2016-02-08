@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPG_Adventure
 {
-    class DataController
+    public class DataController
     {
         
     }

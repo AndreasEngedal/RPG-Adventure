@@ -7,7 +7,7 @@
     <ProjectGuid>{B24133C5-763F-47D0-B043-8FD872AB13E5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Engine</RootNamespace>
+    <RootNamespace>Model</RootNamespace>
     <AssemblyName>Engine</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -43,13 +43,20 @@
     <Compile Include="Items\Armor\BaseArmor.cs" />
     <Compile Include="Items\Armor\LeatherGloves.cs" />
     <Compile Include="Items\Consumables\HealingPotion.cs" />
+    <Compile Include="Items\Consumables\PotionEnums.cs" />
     <Compile Include="Items\Consumables\StrBuffPotion.cs" />
+    <Compile Include="Items\InventoryItem.cs" />
     <Compile Include="Items\Item.cs" />
+    <Compile Include="Items\LootItem.cs" />
     <Compile Include="Items\Weapons\BaseWeapon.cs" />
     <Compile Include="Items\Weapons\Slashing\Longsword.cs" />
+    <Compile Include="Items\Weapons\Slashing\RustySword.cs" />
     <Compile Include="Items\Weapons\WeaponEnums.cs" />
     <Compile Include="Misc\Location.cs" />
+    <Compile Include="Misc\PlayerQuest.cs" />
     <Compile Include="Misc\Quest.cs" />
+    <Compile Include="Misc\QuestCompletionItem.cs" />
+    <Compile Include="Misc\World.cs" />
     <Compile Include="Mobiles\BaseCreature.cs" />
     <Compile Include="Mobiles\Monster.cs" />
     <Compile Include="Mobiles\Player.cs" />

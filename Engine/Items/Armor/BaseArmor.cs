@@ -16,11 +16,9 @@ namespace Model
         public virtual int ArmorBase { get { return 0; } }
         public virtual int StrRequirement { get; set; }
 
-        public BaseArmor(int id, string name, string namePlural) : base(id, name, namePlural)
+        public BaseArmor()
         {
-            ID = id;
-            Name = name;
-            NamePlural = namePlural;
+
         }
 
         public bool Identified

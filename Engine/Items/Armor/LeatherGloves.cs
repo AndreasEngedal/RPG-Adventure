@@ -12,7 +12,7 @@ namespace Model
         public override double Weight { get { return 1.0; } }
         public override int StrRequirement { get { return 0; } }
 
-        public LeatherGloves(int id, string name, string namePlural) : base(id, name, namePlural)
+        public LeatherGloves()
         {
             Identified = false;
         }

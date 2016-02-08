@@ -10,7 +10,7 @@ namespace Model
     {
         public virtual int CurrentHitPoints { get; set; }
         public virtual int MaximumHitPoints { get; set; }
-        public string Name { get; set; }
+        public virtual string Name { get; set; }
 
     }
 }

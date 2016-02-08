@@ -3,3 +3,8 @@ E:\Dropbox\Spil\RPG\Engine\bin\Debug\Engine.pdb
 E:\Dropbox\Spil\RPG\Engine\obj\Debug\Model.csprojResolveAssemblyReference.cache
 E:\Dropbox\Spil\RPG\Engine\obj\Debug\Engine.dll
 E:\Dropbox\Spil\RPG\Engine\obj\Debug\Engine.pdb
+C:\Users\Jesper\Dropbox\Spil\RPG\Engine\bin\Debug\Engine.dll
+C:\Users\Jesper\Dropbox\Spil\RPG\Engine\bin\Debug\Engine.pdb
+C:\Users\Jesper\Dropbox\Spil\RPG\Engine\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Jesper\Dropbox\Spil\RPG\Engine\obj\Debug\Engine.dll
+C:\Users\Jesper\Dropbox\Spil\RPG\Engine\obj\Debug\Engine.pdb

@@ -8,18 +8,20 @@ namespace Model
 {
     public class BaseWeapon : Item
     {
-        public int MinimumDamage { get; set; }
-        public int MaximumDamage { get; set; }
+        public virtual int MinimumDamage { get { return 1; } }
+        public virtual int MaximumDamage { get { return 2; } }
 
-        WeaponRarity rarity;
+        public override int LootTier { get; set; }
 
-        public BaseWeapon(int id, string name, string namePlural, int minimumDamage, int maximumDamage) : base(id, name, namePlural)
+        public virtual WeaponType DamageType { get; set; }
+        public virtual WeaponRarity Rarity { get; set; }
+        public virtual WeaponQuality Quality { get; set; }
+        public virtual WeaponAccuracy Accuracy { get; set; }
+        public virtual WeaponDurabilityLevel Durability { get; set; }
+
+        public BaseWeapon(int lootTier)
         {
-            ID = id;
-            Name = name;
-            NamePlural = namePlural;
-            MinimumDamage = minimumDamage;
-            MaximumDamage = maximumDamage;
+            LootTier = lootTier;
         }
     }
 }

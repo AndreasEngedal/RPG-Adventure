@@ -70,7 +70,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="PageSwitcher.xaml">
+    <Page Include="View\CreateNewPlayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PageSwitcher.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -87,9 +91,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Controller\DataController.cs" />
-    <Compile Include="ISwitchable.cs" />
-    <Compile Include="PageSwitcher.xaml.cs" />
-    <Compile Include="Switcher.cs" />
+    <Compile Include="Controller\IPageController.cs" />
+    <Compile Include="View\CreateNewPlayer.xaml.cs">
+      <DependentUpon>CreateNewPlayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PageSwitcher.xaml.cs" />
+    <Compile Include="Controller\PageController.cs" />
     <Compile Include="View\Gameplay.xaml.cs">
       <DependentUpon>Gameplay.xaml</DependentUpon>
     </Compile>
@@ -126,12 +133,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Engine\Model.csproj">
-      <Project>{b24133c5-763f-47d0-b043-8fd872ab13e5}</Project>
-      <Name>Model</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="Audio\ButtonClick.wav" />
     <Content Include="Images\bg.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -153,10 +155,10 @@
     <Content Include="Images\stat-label-bg.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="MainDatabase.mdf">
+    <Content Include="Config\MainDatabase.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="MainDatabase_log.ldf">
+    <Content Include="Config\MainDatabase_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>MainDatabase.mdf</DependentUpon>
     </Content>
@@ -172,6 +174,13 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Model.csproj">
+      <Project>{b24133c5-763f-47d0-b043-8fd872ab13e5}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

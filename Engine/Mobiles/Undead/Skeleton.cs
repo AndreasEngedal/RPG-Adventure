@@ -7,20 +7,24 @@ using System.Threading.Tasks;
 namespace Model
 {
     class Skeleton : Monster
-    {    
+    {
+        public override int ID { get { return 4; } }
+        public override string Name { get { return "a skeleton"; } }
+
         public override int MinimumDamage { get { return 1; } }
         public override int MaximumDamage { get { return 2; } }
         public override int CurrentHitPoints { get { return 10; } }
         public override int MaximumHitPoints { get { return 10; } }
 
-        // public List<LootItem> LootTable { get; set; }
+        public override int RewardExperiencePoints { get { return 5; } }
+        public override int RewardGold { get { return 10; } }
 
-        public Skeleton(int id, string name, int rewardExperiencePoints, int rewardGold) : base(id, name, rewardExperiencePoints, rewardGold)
+        public override List<Item> LootTable { get; set; }
+
+        public Skeleton()
         {
-            ID = id;
-            Name = name;
-            RewardExperiencePoints = rewardExperiencePoints;
-            RewardGold = rewardGold;
+            LootTable.Add(new Longsword(1));
+            LootTable.Add(new HealingPotion(PotionType.Lesser));
         }
     }
 }

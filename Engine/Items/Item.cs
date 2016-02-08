@@ -8,15 +8,25 @@ namespace Model
 {
     public class Item
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public string NamePlural { get; set; }
+        public virtual int ID { get { return 0; } }
+        public virtual int LootTier { get; set; }
+        
+        public virtual string Name { get { return "Dummy Item"; } }
+        public virtual string NamePlural { get { return "Dummy Items"; } }
 
-        public Item(int id, string name, string namePlural)
+        private static readonly Random random = new Random();
+        private static readonly object syncLock = new object();
+        public static int RandomNumber(int min, int max)
         {
-            ID = id;
-            Name = name;
-            NamePlural = namePlural;
+            lock (syncLock)
+            { // synchronize
+                return random.Next(min, max);
+            }
+        }
+
+        public Item()
+        {
+
         }
     }
 }

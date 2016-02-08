@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using Model;
+using System.Windows.Input;
 
 namespace RPG_Adventure
 {
@@ -24,7 +25,7 @@ namespace RPG_Adventure
 
         private void loadPlayerButton_Click(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new LoadGame());
+            Switcher.Switch(new CreateNewPlayer(controller));
         }
 
         private void exitGameButton_Click(object sender,RoutedEventArgs e)
