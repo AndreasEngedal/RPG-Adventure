@@ -11,21 +11,21 @@ namespace RPG_Adventure
     /// </summary>
     public partial class MainMenu : UserControl, ISwitchable
     {
-        DataController controller;
+        PlayerController controller;
         public MainMenu()
         {
             InitializeComponent();
-            controller = new DataController();
+            controller = new PlayerController();
         }
 
         private void newPlayerButton_Click(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new Gameplay());
+            Switcher.Switch(new CreateNewPlayer(controller));
         }
 
         private void loadPlayerButton_Click(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new CreateNewPlayer(controller));
+            Switcher.Switch(new Gameplay());
         }
 
         private void exitGameButton_Click(object sender,RoutedEventArgs e)

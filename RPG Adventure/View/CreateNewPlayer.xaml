@@ -6,7 +6,58 @@
         xmlns:local="clr-namespace:RPG_Adventure"
         mc:Ignorable="d"
         Height="300" Width="300">
+    <UserControl.Resources>
+        <ImageBrush x:Key="ButtonImage" ImageSource="/Images/button-bg.png"></ImageBrush>
+        <Style TargetType="Button" x:Key="MenuButtons">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Width" Value="395"/>
+            <Setter Property="Height" Value="85"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="pack://application:,,,/Images/#Diablo"/>
+            <Setter Property="FontSize" Value="26.667"/>
+            <Setter Property="BorderThickness" Value="0"/>
+
+            <Setter Property="Background" Value="{StaticResource ButtonImage}"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                    Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
+                    SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" RecognizesAccessKey="True" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Cursor" Value="Hand" />
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <ImageBrush ImageSource="/Images/button-bg-hover.png" />
+                                    </Setter.Value>
+                                </Setter>
+                                <!-- If we don't tell the background to change on hover, it will remain the same -->
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
     <Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="147,143,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <TextBox x:Name="txtBoxNewPlayer" Style="{StaticResource MenuButtons}" Height="20" Margin="20">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <TranslateTransform Y="-80"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="btnCreate" Content="Create" Style="{StaticResource MenuButtons}" Click="btnCreate_Click" />
+        <Button x:Name="exitGame" Content="Main Menu" Click="btnMainMenu_Click" Style="{StaticResource MenuButtons}">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <TranslateTransform Y="100"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
     </Grid>
 </UserControl>

@@ -90,7 +90,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Controller\DataController.cs" />
+    <Compile Include="Config\PlayerData.cs" />
+    <Compile Include="Controller\PlayerController.cs" />
     <Compile Include="Controller\IPageController.cs" />
     <Compile Include="View\CreateNewPlayer.xaml.cs">
       <DependentUpon>CreateNewPlayer.xaml</DependentUpon>

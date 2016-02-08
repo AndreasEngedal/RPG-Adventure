@@ -15,17 +15,32 @@ namespace RPG_Adventure
     /// </summary>
     public partial class CreateNewPlayer : UserControl, ISwitchable
     {
-        DataController controller;
+        PlayerController controller;
 
-        public CreateNewPlayer(DataController controller)
+        public CreateNewPlayer(PlayerController controller)
         {
             InitializeComponent();
             this.controller = controller;
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void btnCreate_Click(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new MainMenu());
+            if (txtBoxNewPlayer.Text == string.Empty)
+                MessageBox.Show("Please write a name.");
+            if (txtBoxNewPlayer.Text.Length > 15)
+                MessageBox.Show("Name can't be longer than 15 characters.");
+            bool alreadyTaken = false;
+            foreach (Player player in controller.players)
+            {
+                if (player.Name == txtBoxNewPlayer.Text)
+                    alreadyTaken = true;
+            }
+            if (alreadyTaken == false)
+            {
+                controller.CreateNewPlayer(txtBoxNewPlayer.Text);
+                MessageBox.Show("Player created!");
+                Switcher.Switch(new Gameplay());
+            }
         }
 
         #region ISwitchable Members
@@ -39,5 +54,10 @@ namespace RPG_Adventure
             Switcher.Switch(new MainMenu());
         }
         #endregion
+
+        private void btnMainMenu_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new MainMenu());
+        }
     }
 }
