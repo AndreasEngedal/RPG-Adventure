@@ -30,7 +30,7 @@ namespace RPG_Adventure
 
         private void exitGameButton_Click(object sender,RoutedEventArgs e)
         {
-            //Switcher.Switch(new ShowCreditsAndExit());
+            Application.Current.Shutdown();
         }
 
         #region ISwitchable Members
