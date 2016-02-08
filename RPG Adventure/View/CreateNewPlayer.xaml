@@ -44,7 +44,7 @@
         </Style>
     </UserControl.Resources>
     <Grid>
-        <TextBox x:Name="txtBoxNewPlayer" Style="{StaticResource MenuButtons}" Height="20" Margin="20">
+        <TextBox x:Name="txtBoxNewPlayer" Height="20" Margin="20">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <TranslateTransform Y="-80"/>
