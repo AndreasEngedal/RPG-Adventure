@@ -135,6 +135,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Audio\ButtonClick.wav" />
+    <Resource Include="Images\arrow-left-grey.png" />
+    <Resource Include="Images\arrow-right-grey.png" />
+    <Resource Include="Images\arrow-left-grey-hover.png" />
+    <Resource Include="Images\arrow-right-grey-hover.png" />
+    <Resource Include="Images\back-button.png" />
+    <Resource Include="Images\back-button-hover.png" />
     <Content Include="Images\bg.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -144,9 +150,16 @@
     <Content Include="Images\button-bg.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\Icons\destroy-icon-hover.png" />
+    <Resource Include="Images\Icons\destroy-icon.png" />
+    <Resource Include="Images\Icons\identify-icon-hover.png" />
+    <Resource Include="Images\Icons\identify-icon.png" />
+    <Resource Include="Images\inventory-bg.jpg" />
     <Content Include="Images\name-label.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\Icons\repair-icon-hover.png" />
+    <Resource Include="Images\Icons\repair-icon.png" />
     <Content Include="Images\stat-grid-bg-small.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

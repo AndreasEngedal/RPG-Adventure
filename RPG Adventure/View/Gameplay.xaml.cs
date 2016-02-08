@@ -40,7 +40,7 @@ namespace RPG_Adventure
             throw new NotImplementedException();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void mainMenu_Click(object sender, RoutedEventArgs e)
         {
             Switcher.Switch(new MainMenu());
         }
