@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("audio/buttonclick.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("audio/theme.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/bg.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/button-bg-hover.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/button-bg.png")]

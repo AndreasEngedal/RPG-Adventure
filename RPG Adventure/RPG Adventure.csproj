@@ -141,6 +141,7 @@
     <Resource Include="Images\arrow-right-grey-hover.png" />
     <Resource Include="Images\back-button.png" />
     <Resource Include="Images\back-button-hover.png" />
+    <Content Include="Audio\theme.wav" />
     <Content Include="Images\bg.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

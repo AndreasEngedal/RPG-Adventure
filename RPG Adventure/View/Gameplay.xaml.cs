@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using Model;
 using System.Windows.Input;
 using System.Windows;
+using System.Media;
 
 namespace RPG_Adventure
 {
@@ -20,6 +21,11 @@ namespace RPG_Adventure
         public Gameplay()
         {
             InitializeComponent();
+
+            using (SoundPlayer player = new SoundPlayer(@"..\..\Audio\theme.wav"))
+            {
+                player.Play();
+            }
 
             Location location = new Location(1, "Home", "This is your house.");
 
