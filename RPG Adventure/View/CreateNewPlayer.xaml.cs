@@ -25,17 +25,26 @@ namespace RPG_Adventure
 
         private void btnCreate_Click(object sender, RoutedEventArgs e)
         {
+            bool available = false;
             if (txtBoxNewPlayer.Text == string.Empty)
+            {
                 MessageBox.Show("Please write a name.");
+                available = true;
+            }
+
             if (txtBoxNewPlayer.Text.Length > 15)
+            {
                 MessageBox.Show("Name can't be longer than 15 characters.");
-            bool alreadyTaken = false;
+                available = true;
+            }
+
             foreach (Player player in controller.players)
             {
                 if (player.Name == txtBoxNewPlayer.Text)
-                    alreadyTaken = true;
+                    available = true;
             }
-            if (alreadyTaken == false)
+
+            if (available == false)
             {
                 controller.CreateNewPlayer(txtBoxNewPlayer.Text);
                 MessageBox.Show("Player created!");

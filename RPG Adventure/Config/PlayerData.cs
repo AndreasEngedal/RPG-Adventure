@@ -112,7 +112,7 @@
             return new SqlConnection(
                 @"Data Source=(LocalDB)\MSSQLLocalDB;" +
                 @"AttachDbFilename =|DataDirectory|\Config\MainDatabase.mdf;" +
-                @"Integrated Security=True"
+                @"Initial Catalog=MainDatabase.mdf Integrated Security=True"
                 );
         }
     }
