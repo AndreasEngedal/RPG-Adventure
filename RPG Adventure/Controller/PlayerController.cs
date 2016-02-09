@@ -12,7 +12,8 @@ namespace RPG_Adventure
     {
         // Does the class need a public List<Player>?
         public List<Player> players;
-        PlayerData data;
+        private PlayerData data;
+        private Player player;
 
         public PlayerController()
         {
@@ -22,7 +23,9 @@ namespace RPG_Adventure
 
         public void CreateNewPlayer(string name)
         {
-            data.CreateNewPlayer(new Player(name));
+            player = new Player(name);
+            data.CreateNewPlayer(player);
+            players.Add(player);
         }
 
         public List<Player> ReadPlayers()
