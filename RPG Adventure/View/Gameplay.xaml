@@ -197,6 +197,7 @@
         </Label>
         <DockPanel Margin="0 25">
             <Grid Width="335" Height="561" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15 20">
+                
                 <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="335" Height="195" Margin="0">
                     <StackPanel.Background>
                         <ImageBrush ImageSource="/Images/stat-grid-bg-small.jpg" />
@@ -222,6 +223,7 @@
                         </Label.Background>
                     </Label>
                 </StackPanel>
+                
                 <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Width="150" Height="195"  x:Name="StatWindow">
                     <Label x:Name="lblHitPoints" Content="" MaxWidth="100" Foreground="White" Padding="0 10 0 0" Height="35" Margin="0 15 0 5"/>
                     <Label x:Name="lblGold" Content="" MaxWidth="100" Foreground="White" Padding="0 10 0 0" Height="35" Margin="0 0 0 5"/>
@@ -237,12 +239,19 @@
                         <Button x:Name="btnPrevInventoryPage" Style="{StaticResource ArrowButtonLeft}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="20"/>
                         <Button x:Name="deleteButton" Style="{StaticResource DeletionIcon}" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="-20 0 0 70" />
                         <Button x:Name="identifyButton" Style="{StaticResource IdentifyIcon}" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="20 0 0 70"/>
-                        <Button x:Name="repairButton" Style="{StaticResource ReperationIcon}" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="20 0 0 70" />
+                        <Button x:Name="repairButton" Style="{StaticResource ReperationIcon}" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="20 0 0 70" Click="repairButton_Click" />
                         <Button x:Name="btnNextInventoryPage" Style="{StaticResource ArrowButtonRight}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="-6 20 0 20"/>
                     </DockPanel>
                 </StackPanel>
+                
             </Grid>
         </DockPanel>
+        <Grid HorizontalAlignment="Right" VerticalAlignment="Center" Width="200" Height="200" Margin="10 0 100 10" Visibility="Hidden" x:Name="testWindow">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Images/bg.jpg" />
+            </Grid.Background>
+            <Button Width="50" Height="25" Content="Hejsa"></Button>
+        </Grid>
         <Button x:Name="btnMainMenu" Style="{StaticResource BackButton}" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Click="mainMenu_Click"/>
     </Grid>
 </UserControl>

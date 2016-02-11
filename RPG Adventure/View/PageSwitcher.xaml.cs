@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace RPG_Adventure
 {
@@ -39,5 +40,6 @@ namespace RPG_Adventure
             if (e.ChangedButton == MouseButton.Left)
                 this.DragMove();
         }
+        
     }
 }

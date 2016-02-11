@@ -8,6 +8,8 @@ using Model;
 using System.Windows.Input;
 using System.Windows;
 using System.Media;
+using System.Windows.Threading;
+using System.Windows.Media;
 
 namespace RPG_Adventure
 {
@@ -40,6 +42,7 @@ namespace RPG_Adventure
                 lblLevel.Content = player.Level.ToString();
                 lblName.Content = player.Name;
             }
+
         #region ISwitchable Members
         public void UtilizeState(object state)
         {
@@ -51,5 +54,16 @@ namespace RPG_Adventure
             Switcher.Switch(new MainMenu());
         }
         #endregion
+
+        private void repairButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (testWindow.Visibility == Visibility.Hidden)
+            {
+                testWindow.Visibility = Visibility.Visible;
+            } else
+            {
+                testWindow.Visibility = Visibility.Hidden;
+            }            
+        }      
     }
 }

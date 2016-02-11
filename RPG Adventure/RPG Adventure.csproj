@@ -190,7 +190,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="View\GamePlay\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine\Model.csproj">
       <Project>{b24133c5-763f-47d0-b043-8fd872ab13e5}</Project>
