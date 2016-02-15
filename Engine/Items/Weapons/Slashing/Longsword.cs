@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Model
+﻿namespace Model
 {
-    class Longsword : BaseWeapon
+    public class Longsword : BaseWeapon
     {
         public override int ID { get { return 1; } }        
 
@@ -22,20 +16,20 @@ namespace Model
         public override WeaponAccuracy Accuracy { get; set; }
         public override WeaponDurabilityLevel Durability { get; set; }
 
-        private int betterLootChance = RandomNumber(0, 100);
+        private int LootChance = RandomNumber.NumberBetween(0, 100);
 
         public Longsword(int lootTier) : base(lootTier)
         {            
             if (lootTier == 0 )
             {
-                if (betterLootChance < 10)
+                if (LootChance < 10)
                     Rarity = WeaponRarity.Uncommon;
                 else
                     Rarity = WeaponRarity.Common;
             }
             if (lootTier == 1)
             {
-                if (betterLootChance < 10)
+                if (LootChance < 10)
                     Rarity = WeaponRarity.Rare;
                 else
                     Rarity = WeaponRarity.Uncommon;

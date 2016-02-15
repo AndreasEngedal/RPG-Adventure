@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class Skeleton : Monster
+    public class Skeleton : Monster
     {
         public override int ID { get { return 4; } }
         public override string Name { get { return "a skeleton"; } }
@@ -21,10 +21,14 @@ namespace Model
 
         public override List<Item> LootTable { get; set; }
 
+        private int LootChance = RandomNumber.NumberBetween(0, 100);
+
         public Skeleton()
         {
-            LootTable.Add(new Longsword(1));
-            LootTable.Add(new HealingPotion(PotionType.Lesser));
+            if (LootChance < 10)
+                LootTable.Add(new Longsword(1));
+            if (LootChance < 50)
+                LootTable.Add(new HealingPotion(PotionType.Lesser));
         }
     }
 }

@@ -30,7 +30,7 @@ namespace Model
 
         private static void PopulateMonsters()
         {
-            Monsters.Add(new Skeleton());
+            Monsters.Add(new Skeleton());            
         }
 
         private static void PopulateQuests()
@@ -47,7 +47,6 @@ namespace Model
 
             // Link the locations together
             home.LocationToNorth = townSquare;
-
             townSquare.LocationToSouth = home;            
 
             // Add the locations to the static list

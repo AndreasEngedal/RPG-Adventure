@@ -234,7 +234,10 @@
                     <StackPanel.Background>
                         <ImageBrush ImageSource="/Images/inventory-bg.jpg" />
                     </StackPanel.Background>
-                    <DockPanel Height="360">
+                    <DockPanel Height="200">
+                        <DataGrid x:Name="dgvInventory" Height="200" Width="305" VerticalAlignment="Top" Background="Transparent" Margin="15" HeadersVisibility="None" RowBackground="{DynamicResource RepairIcon}" IsReadOnly="True" IsEnabled="False"/>
+                    </DockPanel>
+                    <DockPanel Height="160">
                         <Button x:Name="btnPrevInventoryPage" Style="{StaticResource ArrowButtonLeft}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="20"/>
                         <Button x:Name="deleteButton" Style="{StaticResource DeletionIcon}" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="-20 0 0 70" />
                         <Button x:Name="identifyButton" Style="{StaticResource IdentifyIcon}" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="20 0 0 70"/>
@@ -258,17 +261,35 @@
                         <ImageBrush ImageSource="/Images/bg.jpg" />
                     </StackPanel.Background>
                     <DockPanel Height="470">
-
+                        <RichTextBox x:Name="rtbLocation" Height="50" Width="200" Foreground="White" VerticalAlignment="Top" Margin="10" BorderThickness="0" IsReadOnly="True" FontFamily="/RPG Adventure;component/Images/#Diablo" Padding="0 15" FontSize="15">
+                            <RichTextBox.Background>
+                                <ImageBrush ImageSource="/Images/bg.jpg" />
+                            </RichTextBox.Background>
+                            <FlowDocument TextAlignment="Center">
+                                <Paragraph>
+                                    <Run Text="Location"/>
+                                </Paragraph>
+                            </FlowDocument>
+                        </RichTextBox>
                     </DockPanel>
                 </StackPanel>
-                <StackPanel x:Name="InformationWindow"  Margin="-10,465,10,90" Background="#FF16204B">
+                <StackPanel x:Name="InformationWindow"  Margin="-10,465,10,90">
                     <DockPanel Height="115">
-
+                        <RichTextBox x:Name="rtbInformation" Height="115" Background="#FF16204B" Foreground="White" IsReadOnly="True">
+                            <FlowDocument>
+                                <Paragraph>
+                                    <Run Text="Information window..."/>
+                                </Paragraph>
+                            </FlowDocument>
+                        </RichTextBox>
                     </DockPanel>
                 </StackPanel>
                 <StackPanel x:Name="ActionWindow" Height="95"  Margin="-10,585,10,-25" VerticalAlignment="Top" Background="#FF16204B" >
                     <DockPanel Height="95">
-
+                        <Button x:Name="btnNorth" Content="North" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75" Margin="50 10 0 0" Click="btnNorth_Click"/>
+                        <Button x:Name="btnWest" Content="West" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75" Margin="-115 37 0 0" Click="btnWest_Click"/>
+                        <Button x:Name="btnEast" Content="East" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75" Margin="-30 37 0 0" Click="btnEast_Click"/>
+                        <Button x:Name="btnSouth" Content="South" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75" Margin="-120 65 0 0" Click="btnSouth_Click"/>
                     </DockPanel>
                 </StackPanel>
             </Grid>
@@ -277,8 +298,17 @@
             <Grid.Background>
                 <ImageBrush ImageSource="/Images/bg.jpg" />
             </Grid.Background>
-            <Button Width="50" Height="25" Content="Hejsa"></Button>
+            <DockPanel Height="200">
+                <DataGrid x:Name="dgvQuests" Height="200" Width="200" VerticalAlignment="Top" Background="Transparent" Margin="15" HeadersVisibility="None" IsEnabled="False" IsReadOnly="True"/>
+            </DockPanel>
         </Grid>
         <Button x:Name="btnMainMenu" Style="{StaticResource BackButton}" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="15 20" Click="mainMenu_Click"/>
+        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="100" Margin="1053,317,-228,0" VerticalAlignment="Top" Width="100">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
     </Grid>
 </UserControl>
