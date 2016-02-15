@@ -12,7 +12,7 @@
         <ImageBrush x:Key="DeleteIcon" ImageSource="/Images/Icons/destroy-icon.png"></ImageBrush>
         <ImageBrush x:Key="RepairIcon" ImageSource="/Images/Icons/repair-icon.png"></ImageBrush>
         <ImageBrush x:Key="BackButtonIcon" ImageSource="/Images/back-button.png"></ImageBrush>
-               
+
         <Style TargetType="Button" x:Key="ArrowButtonLeft">
             <Setter Property="Width" Value="75"/>
             <Setter Property="Height" Value="28"/>
@@ -158,7 +158,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        
+
         <Style TargetType="Button" x:Key="BackButton">
             <Setter Property="Width" Value="40"/>
             <Setter Property="Height" Value="40"/>
@@ -196,9 +196,8 @@
             </Label.Background>
         </Label>
         <DockPanel Margin="0 25">
-            <Grid Width="335" Height="561" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15 20">
-                
-                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="335" Height="195" Margin="0">
+            <Grid Width="335" Height="640" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,20,15,0">
+                <StackPanel HorizontalAlignment="Left" Width="335" Margin="0,0,0,445">
                     <StackPanel.Background>
                         <ImageBrush ImageSource="/Images/stat-grid-bg-small.jpg" />
                     </StackPanel.Background>
@@ -223,7 +222,7 @@
                         </Label.Background>
                     </Label>
                 </StackPanel>
-                
+
                 <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Width="150" Height="195"  x:Name="StatWindow">
                     <Label x:Name="lblHitPoints" Content="" MaxWidth="100" Foreground="White" Padding="0 10 0 0" Height="35" Margin="0 15 0 5"/>
                     <Label x:Name="lblGold" Content="" MaxWidth="100" Foreground="White" Padding="0 10 0 0" Height="35" Margin="0 0 0 5"/>
@@ -231,11 +230,11 @@
                     <Label x:Name="lblLevel" Content="" MaxWidth="100" Foreground="White" Padding="0 10 0 0" Height="35" Margin="0 0 0 5"/>
                 </StackPanel>
 
-                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="335" Height="361" x:Name="InventoryWindow">
+                <StackPanel HorizontalAlignment="Left" Width="335" x:Name="InventoryWindow" Margin="0,200,0,80">
                     <StackPanel.Background>
                         <ImageBrush ImageSource="/Images/inventory-bg.jpg" />
                     </StackPanel.Background>
-                    <DockPanel Height="361">
+                    <DockPanel Height="360">
                         <Button x:Name="btnPrevInventoryPage" Style="{StaticResource ArrowButtonLeft}" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="20"/>
                         <Button x:Name="deleteButton" Style="{StaticResource DeletionIcon}" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="-20 0 0 70" />
                         <Button x:Name="identifyButton" Style="{StaticResource IdentifyIcon}" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="20 0 0 70"/>
@@ -243,7 +242,35 @@
                         <Button x:Name="btnNextInventoryPage" Style="{StaticResource ArrowButtonRight}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="-6 20 0 20"/>
                     </DockPanel>
                 </StackPanel>
-                
+
+                <StackPanel HorizontalAlignment="Left" Width="335" x:Name="ButtonWindow" Margin="0,565,0,-25" Height="95" VerticalAlignment="Top">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="/Images/stat-grid-bg-small.jpg" />
+                    </StackPanel.Background>
+                    <DockPanel Height="95">
+
+                    </DockPanel>
+                </StackPanel>
+            </Grid>
+            <Grid>
+                <StackPanel x:Name="MapWindow" Margin="-10,-10,10,210">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="/Images/bg.jpg" />
+                    </StackPanel.Background>
+                    <DockPanel Height="470">
+
+                    </DockPanel>
+                </StackPanel>
+                <StackPanel x:Name="InformationWindow"  Margin="-10,465,10,90" Background="#FF16204B">
+                    <DockPanel Height="115">
+
+                    </DockPanel>
+                </StackPanel>
+                <StackPanel x:Name="ActionWindow" Height="95"  Margin="-10,585,10,-25" VerticalAlignment="Top" Background="#FF16204B" >
+                    <DockPanel Height="95">
+
+                    </DockPanel>
+                </StackPanel>
             </Grid>
         </DockPanel>
         <Grid HorizontalAlignment="Right" VerticalAlignment="Center" Width="200" Height="200" Margin="10 0 100 10" Visibility="Hidden" x:Name="testWindow">
@@ -252,6 +279,6 @@
             </Grid.Background>
             <Button Width="50" Height="25" Content="Hejsa"></Button>
         </Grid>
-        <Button x:Name="btnMainMenu" Style="{StaticResource BackButton}" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Click="mainMenu_Click"/>
+        <Button x:Name="btnMainMenu" Style="{StaticResource BackButton}" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="15 20" Click="mainMenu_Click"/>
     </Grid>
 </UserControl>
